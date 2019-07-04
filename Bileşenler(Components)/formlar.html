@@ -1,0 +1,169 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Hello, world!</title> 
+        <style type="text/css">
+          
+            
+          
+        </style>    
+    </head>
+    <body>
+        <div class="container">
+            <h1>Formlar -> Giris Grupları </h1>
+            <hr>
+            
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="">
+                </div>
+                  <div class="form-group">
+                    <input type="e-mail" class="form-control" name="">
+                </div>
+                  <div class="form-group">
+                    <select class="form-control">
+                        <option>Kurs 1</option>
+                        <option>Kurs 2</option>
+                        <option>Kurs 3</option>
+                    </select>
+                </div>
+
+                 <div class="form-group">
+                    <select multiple class="form-control">
+                        <option>Kurs 1</option>
+                        <option>Kurs 2</option>
+                        <option>Kurs 3</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="10" cols="10">
+                        
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="file" name="" ame="">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" readonly="" value="bu giriş kapalıdır" class="form-control" name="">
+                    <input type="text" readonly="" value="bu giriş kapalıdır" class="form-control-plaintext" name="">
+                    <input type="text" disabled="" value="bu giriş kapalıdır" class="form-control" name="">
+
+                </div> 
+
+                <div class="form-check form-check-inline">
+                   <label class="form-check-label">Elma <input type="checkbox" class="form-check-input" name=""></label>
+                    
+                </div>
+                  <div class="form-check form-check-inline">
+                   <label class="form-check-label">Armut <input type="checkbox" class="form-check-input" name=""></label>
+                    
+                </div>
+
+                  <div class="form-check form-check-inline">
+                   <label class="form-check-label">üzüm <input type="checkbox" class="form-check-input" name=""></label>
+                    
+                </div>
+
+                <div class="form-check form-check-inline">
+                   <label class="form-check-label">Elma <input type="radio" class="form-check-input" name=""></label>
+                    
+                </div>
+                  <div class="form-check form-check-inline">
+                   <label class="form-check-label">Armut <input type="radio" class="form-check-input" name=""></label>
+                    
+                </div>
+
+                  <div class="form-check form-check-inline">
+                   <label class="form-check-label">üzüm <input type="radio" class="form-check-input" name=""></label>
+                    
+                </div>
+
+                <br><br>
+
+
+
+                <div class="form-check form-check-inline">
+                   <label class="form-check-label"> <input type="checkbox" class="form-check-input" name=""> Bu Checkbox seçilebilir</label>
+                </div>
+
+
+                <div class="form-check disabled form-check-inline">
+                   <label class="form-check-label"><input type="checkbox" class="form-check-input" disabled="" name=""> Bu Checkbox seçilemez!</label>
+                </div>
+
+
+                <br><br>
+
+                <div class="form-group">
+                    <input type="text" class="form-control is-valid" name="">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control is-invalid" name="">
+                </div>
+
+
+
+
+
+
+            </form><br><br>
+
+            <!--  Form Kontrol Validation -- >
+
+    <form class="needs-validation" novalidate>
+        <input type="text" placeholder="Adınızı Girin" class="form-control" required><br>
+        <input type="text" placeholder="Soyadınızı Girin" class="form-control" required>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        
+    </form>
+
+            
+
+
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+    </body>
+    </html>
